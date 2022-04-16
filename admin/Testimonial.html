@@ -41,17 +41,20 @@
     <h1 class="text-center">Testimonial</h1>
     <form onsubmit="create_user()" name="userForm">
       <div class="form-group">
-        <input class="form-control" type="text" name="ID" placeholder="ID" autocomplete="off">
+        <input type="radio" id="html" name="fav_language" value="HTML"><label for="html"> 1 </label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS"><label for="css"> 2</label><br>
+      <button id="delete" type="button" class="btn btn-danger" onclick="delete_all()">Delete</button>
+      <button id="update" class="btn btn-warning" onclick="update_user()" type="button">Repair</button>
         <input class="form-control" type="position" name="Content" placeholder="Content" autocomplete="off">
         <input class="form-control" type="text" name="Testimonial" placeholder="Testimonial" autocomplete="off">
         
         
         
-        <div class="d-flex justify-content-center">
+        
           <button type="submit" id="create" class="btn btn-success">Add</button>
-          <button id="update" class="btn btn-warning" onclick="update_user()" type="button">Update</button>
-          <button id="delete" type="button" class="btn btn-danger" onclick="delete_all()">Delete</button>
-        </div>
+          
+          
+        
       </div>
     </form>
 
